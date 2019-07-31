@@ -1,0 +1,143 @@
+Templates
+
+INSERT INTO tblArtists (artistID, artistName, artistGenre)
+VALUES (NULL, '', '');
+
+INSERT INTO tblAlbums (albumID, albumName, dateReleased, albumArt, artistID)
+VALUES (NULL, '', '', , '');
+
+INSERT INTO tblTours (tourID, tourName, artistID)
+VALUES (NULL, '', '');
+
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, '', '','');
+
+
+--------------------------------------------------------------------
+ARTISTS
+
+INSERT INTO tblArtists (artistID, artistName, artistGenre)
+VALUES (NULL, 'Arctic Monkeys', 'Indie');
+
+INSERT INTO tblArtists (artistID, artistName, artistGenre)
+VALUES (NULL, 'Post Malone', 'Hip-Hop');
+
+INSERT INTO tblArtists (artistID, artistName, artistGenre)
+VALUES (NULL, 'Deadmau5', 'Electronic');
+
+INSERT INTO tblArtists (artistID, artistName, artistGenre)
+VALUES (NULL, 'Lil Peep', 'Hip-Hop');
+
+INSERT INTO tblArtists (artistID, artistName, artistGenre)
+VALUES (NULL, 'Blossoms', 'Indie');
+
+--------------------------------------------------------------------
+ALBUMS
+
+INSERT INTO tblAlbums (albumID, albumName, dateReleased, albumArt, artistID)
+VALUES (NULL, 'Stoney', '2016-12-09', NULL, '1');
+
+INSERT INTO tblAlbums (albumID, albumName, dateReleased, albumArt, artistID)
+VALUES (NULL, 'AM', '2013-09-09', NULL, '2');
+
+INSERT INTO tblAlbums (albumID, albumName, dateReleased, albumArt, artistID)
+VALUES (NULL, 'Suck It and See', '2011-04-01', NULL, '2');
+
+INSERT INTO tblAlbums (albumID, albumName, dateReleased, albumArt, artistID)
+VALUES (NULL, 'Come Over When You're Sober Pt.1', '2017-08-15', NULL, '7');
+
+INSERT INTO tblAlbums (albumID, albumName, dateReleased, albumArt, artistID)
+VALUES (NULL, 'For Lack of a Better Name', '2009-09-22', NULL, '6');
+
+INSERT INTO tblAlbums (albumID, albumName, dateReleased, albumArt, artistID)
+VALUES (NULL, 'Blossoms', '2016-08-05', NULL, '8');
+
+--------------------------------------------------------------------
+Tours
+
+INSERT INTO tblTours (tourID, tourName, artistID)
+VALUES (NULL, 'Psycho', '1');
+
+INSERT INTO tblTours (tourID, tourName, artistID)
+VALUES (NULL, 'Lets make more money', '2');
+
+INSERT INTO tblTours (tourID, tourName, artistID)
+VALUES (NULL, 'EDMau5', '6');
+
+INSERT INTO tblTours (tourID, tourName, artistID)
+VALUES (NULL, 'Self-Titled', '8');
+
+--------------------------------------------------------------------
+Tracks
+
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Broken Whiskey Glass', '3.34','1');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Big Lie', '3.22','1');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Deja Vu', '3.11','1');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'No Option', '3.55','1');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Cold', '4.17','1');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'I Fall Apart', '3.34','1');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Patient', '3.14','1');
+
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Do I wanna know?', '3.32','2');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'R U Mine?', '3.22','2');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'One For The Road', '3.26','2');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Arabella', '3.27','2');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'I Want It All', '3.05','2');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'No.1 Party Anthem', '4.03','2');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Mad Sounds', '3.35','2');
+
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Brick by Brick', '3.11','4');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Liberty Pictures', '3.15','4');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Suck it and See', '3.45','4');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Thats Where Youre Wrong', '3.32','4');
+
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Benz Truck', '3.11','7');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Awful Things', '3.05','7');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'U Said', '3.54','7');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Better Off (Dying)', '3.41','7');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'The Brightside', '3.32','7');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Problems', '3.25','7');
+
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Charlemagne', '3.52','9');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Getaway', '3.01','9');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Honey Sweet', '3.09','9');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Blown Rose', '3.29','9');
+
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Ghosts n Stuff', '3.15','8');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Word Problems', '3.10','8');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Soma', '3.47','8');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Lack of a Better Name', '3.35','8');
+INSERT INTO tblTracks (trackID, trackName, trackDuration, albumID)
+VALUES (NULL, 'Strobe', '3.26','8');

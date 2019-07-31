@@ -1,0 +1,12 @@
+Site is currently live and accessabile on http://shutunes.co.uk
+
+You can login with an admin account (which can access the admin menu panel)
+
+Logon: cc
+Password: cc
+
+OR
+You can login with an user account-
+
+Logon: mm
+Password: mm

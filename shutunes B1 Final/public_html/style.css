@@ -1,0 +1,195 @@
+/* CSS For the Login menu (index.php) */
+.login{
+  padding-left: 20px;
+  font-size: 20;
+  font-family: 'Oswald', sans-serif;
+  color: #a43057;
+}
+/*CSS For Menu, Logo and PHP Code which shows time and date */
+
+.dateAndUser{
+  text-align: center;
+  font-style: oblique;
+  background-color: white;
+  font-size: 18;
+}
+
+.logo{
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.dataEntry{
+  font-size: 20;
+  font-family: 'Oswald', sans-serif;
+  align-items: left;
+  position: absolute ;
+  padding-left: 20;
+}
+
+.nav .admin {
+  display: none;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #a43057;
+}
+
+.nav a.active {
+  background-color: #fff;
+  color: #a43057;
+  cursor: default;
+}
+
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+/* CSS For Artist Page*/
+
+.albumReleaseDateCSS{
+  padding-left: 200px;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+.albumArt{
+  padding-left: 200px;
+  float: left;
+}
+
+.trackInfo{
+  padding-left: 200px;
+  font-family: 'Oswald', sans-serif;
+  float: left;
+}
+.albumNameCSS{
+  padding-left: 200px;
+  font-size: 30px;
+  font-weight:bold;
+  font-family: 'Oswald', sans-serif;
+}
+.artistInfoCSS{
+  padding-left: 200px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #444;
+  font-size: 35px;
+}
+.searchArtist{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #444;
+  }
+
+  .listExistingPlaylistsCSS{
+
+    font-family: 'Oswald', sans-serif;
+    padding-left: 20px;
+    float: left;
+  }
+  .listExistingPlaylistsCSS h3{
+    color: #a43057;
+  }
+/* CSS For Playlists Page*/
+.existingPlaylists{
+  font-family: 'Oswald', sans-serif;
+  color: #444;
+  float: center;
+  text-align: center;
+}
+.fourofour{
+  text-align: center;
+  font-family: sans-serif;
+}
+.fourofour h1{
+  font-size: 85px;
+  padding: 0;
+  margin:auto;
+  color: #a43057;
+}
+.playlistTracks{
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 10px;
+}
+.playlistTracks h1{
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 10px;
+    color: #a43057;
+}
+/*CSS For Tracks Page */
+.searchTracks{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #444;
+    text-align: center;
+  }
+  /*Admin Page CSS */
+  .adminConsoleCSS{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #444;
+    text-align: center;
+  }
+  .adminConsoleCSS h1{
+    font-size: 48px;
+    text-decoration: underline;
+  }
+  .editTrackCSS{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: #a43057;
+    text-align: center;
+  }
+  .editArtistCSS{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: #444;
+    text-align: center;
+
+  }
+  .editAlbumCSS{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: #a43057;
+    text-align: center;
+  }
+/* Add New Track Page*/
+.existingAlbumsAddNewTrack{
+  text-align: left;
+}
+.table, th, td {
+    border: 1px solid black;
+}

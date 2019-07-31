@@ -1,0 +1,79 @@
+CREATE TABLE `shutunes_db`.`tblAlbums` (
+ `albumID` INT NOT NULL PRIMARY KEY AUTO_INCREMENT ,
+`albumName` VARCHAR(20) NOT NULL , 
+`dateRealeased` DATE NOT NULL ,
+`albumArt` BLOB NOT NULL ,
+`artistID` INT NOT NULL FOREIGN KEY tblartist(artistID),
+UNIQUE (`albumID`),
+UNIQUE (`artistID`));
+
+
+CREATE TABLE `shutunes_db`.`tblUsers` (
+ `userID` INT NOT NULL PRIMARY KEY , 
+`username` VARCHAR(15) NOT NULL UNIQUE, 
+`password` VARCHAR(15) NOT NULL , 
+`email` VARCHAR(25) NOT NULL , 
+`firstName` VARCHAR(10) NOT NULL ,
+`lastName` VARCHAR(20) NOT NULL , 
+`accountType` VARCHAR(20) NOT NULL );
+
+
+CREATE TABLE `shutunes_db`.`tblArtists` ( 
+`artistID` INT NOT NULL PRIMARY KEY, 
+`artistName` VARCHAR(20) NOT NULL , 
+`artistGenre` VARCHAR(20) NOT NULL);
+
+
+CREATE TABLE `shutunes_db`.`tblBookings` (
+ `bookingID` INT NOT NULL PRIMARY KEY, 
+`ticketQuantity` VARCHAR(20) NOT NULL , 
+`userID` INT NOT NULL FOREIGN KEY REFERENCES tbluser(userID));
+
+
+CREATE TABLE `shutunes_db`.`tblGigs` ( 
+`gigsID` INT NOT NULL PRIMARY KEY,
+`venueID` INT NOT NULL , 
+`tourID` INT NOT NULL FOREIGN KEY REFERENCES tbltour(tourID));
+
+
+CREATE TABLE `shutunes_db`.`tblPlaylistInfo` ( 
+`playlistEntryID` INT NOT NULL PRIMARY KEY, 
+`trackID` INT NOT NULL tblsong(trackID), 
+`PlaylistID` INT NOT NULL FOREIGN KEY REFERENCES tblplaylist(playlistID));
+
+
+CREATE TABLE `shutunes_db`.`tblPlaylistEntry` ( 
+`playlistID` INT NOT NULL PRIMARY KEY, 
+`playListName` VARCHAR(20) NOT NULL , 
+`userID` INT NOT NULL FOREIGN KEY REFERENCES tbluser(userID));
+
+
+CREATE TABLE `shutunes_db`.`tblTickets` ( 
+`ticketID` INT NOT NULL PRIMARY KEY, 
+`TypeOfTicket` VARCHAR(20) NOT NULL , 
+`costOfTicket` DECIMAL(15,2) NOT NULL ,
+`gigID` INT(25) NOT NULL FOREIGN KEY REFERENCES tblGig(gigID), 
+`boookingID` INT(10) NOT NULL FOREIGN KEY REFERENCES tblbooking(bookingID));
+
+
+CREATE TABLE `shutunes_db`.`tblTours` ( 
+`tourID` INT NOT NULL PRIMARY KEY, 
+`tourName` VARCHAR(20) NOT NULL , 
+`artistID` INT NOT NULL FOREIGN KEY REFERENCES tblartist(artistID));
+
+
+CREATE TABLE `shutunes_db`.`tblTracks` ( 
+`trackID` INT NOT NULL PRIMARY KEY, 
+`trackName` VARCHAR(20) NOT NULL , 
+`trackDuration` DECIMAL(5,2) NOT NULL , 
+`albumID` INT(25) NOT NULL FOREIGN KEY REFERENCES tblalbulm(albulmID));
+
+
+CREATE TABLE `shutunes_db`.`tblVenue` ( 
+`venueID` INT NOT NULL PRIMARY KEY, 
+`venueName` VARCHAR(20) NOT NULL , 
+`venueAgeLimit` VARCHAR(3) NOT NULL);
+
+
+
+
